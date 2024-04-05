@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  /* background-color */
+  --bg--bdy--color: hsl(0, 0%, 100%);
+
+  /* text-color */
+  --tt--color: hsl(240, 6%, 21%);
+
+  /* button-color */
+  --btn--color: hsl(240, 6%, 21%);
+  --btn--color--focus: hsl(0, 0%, 100%);
+
+  --bg--btn--color: hsl(240, 9%, 89%);
+  --bg--btn--focus: hsl(192, 97%, 31%);
+}
+
+body {
+  background: var(--bg--bdy--color);
+  color: var(--tt--color);
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#app {
+  display: flex;
+  align-content: center;
+  gap: 19.2rem;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+}
+
+#timer span {
+  font-size: 12.6rem;
+}
+
+button {
+  border: 0;
+  color: var(--btn--color);
+  cursor: pointer;
+}
+
+#timer-controls button {
+  background-color: transparent;
+  font-size: 4.2rem;
+}
+
+#sound-menu button {
+  background-color: var(--bg--btn--color);
+  border-radius: 2.4rem;
+  font-size: 5.6rem;
+  padding: 4.8rem;
+  transition: .3s;
+}
+
+#sound-menu button:focus {
+  background-color: var(--bg--btn--focus);
+  color: var(--btn--color--focus);
+}
+
+#sound-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
