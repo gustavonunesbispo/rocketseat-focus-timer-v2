@@ -31,16 +31,16 @@
       </section>
 
       <section id="timer-controls">
-        <button class="icon-button ph ph-play-circle">
+        <button data-action="startTimer" class="icon-button ph ph-play-circle">
           <span class="sr-only">Iniciar contador</span>
         </button>
-        <button class="icon-button ph ph-pause-circle">
+        <button data-action="stopTimer" class="icon-button ph ph-pause-circle">
           <span class="sr-only">Pausar contador</span>
         </button>
-        <button class="icon-button ph ph-plus">
+        <button data-action="addFiveMinutes" class="icon-button ph ph-plus">
           <span class="sr-only">Adicionar 5 minutos</span>
         </button>
-        <button class="icon-button ph ph-minus">
+        <button data-action="removeFiveMinutes" class="icon-button ph ph-minus">
           <span class="sr-only">Subtrair 5 minutos</span>
         </button>
       </section>
@@ -48,16 +48,16 @@
 
     <aside>
       <section id="sound-menu">
-        <button class="icon-button-box ph ph-tree btn-1">
+        <button data-action="forestSound" class="icon-button-box ph ph-tree btn-1">
           <span class="sr-only">Som de fundo: floresta</span>
         </button>
-        <button class="icon-button-box ph ph-cloud-snow btn-2">
+        <button data-action="rainSound" class="icon-button-box ph ph-cloud-snow btn-2">
           <span class="sr-only">Som de fundo: chuva</span>
         </button>
-        <button class="icon-button-box ph ph-storefront btn-3">
+        <button data-action="coffeeShopSound" class="icon-button-box ph ph-storefront btn-3">
           <span class="sr-only">Som de fundo: cafeteria</span>
         </button>
-        <button class="icon-button-box ph ph-fire btn-4">
+        <button data-action="fireplaceSound" class="icon-button-box ph ph-fire btn-4">
           <span class="sr-only">Som de fundo: lareira</span>
         </button>
       </section>
